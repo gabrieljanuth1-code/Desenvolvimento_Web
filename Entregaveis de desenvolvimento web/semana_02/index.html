@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Diário de Silent Hill 3</title>
+
+    <style>
+        /* ===== FUNDO DA PÁGINA ===== */
+        body {
+            
+            background-color: #1a1a1a;
+            background-image: url("lago.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            font-family: Verdana, Tahoma, sans-serif;
+            font-size: 13px;
+            color: #dddddd;
+
+            max-width: 960px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* ===== CABEÇALHO ===== */
+        header {
+            width: 100%;
+            background: linear-gradient(#5a0000, #2a0000);
+            border: 2px solid #8b0000;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px #000000;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 36px;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
+            margin: 0 0 10px 0;
+        }
+
+        nav a {
+            color: #ffcccc;
+            background-color: #3a0000;
+            border: 1px solid #8b0000;
+            border-radius: 4px;
+            padding: 5px 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #8b0000;
+            color: #ffffff;
+        }
+
+        /* ===== POSTS ===== */
+        main {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        article {
+            background-color: rgba(20, 20, 20, 0.9);
+            border: 1px solid #555555;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 10px #000000;
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            color: #ff4444;
+            border-bottom: 1px dashed #555555;
+            padding-bottom: 5px;
+        }
+
+        article p {
+            line-height: 1.6;
+        }
+
+        article img {
+            max-width: 100%;
+            border: 4px solid #ffffff;
+            box-shadow: 3px 3px 8px #000000;
+        }
+
+        /* ===== BARRA LATERAL ===== */
+        aside {
+            flex: 2;
+            background-color: rgba(20, 20, 20, 0.9);
+            border: 1px solid #555555;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 10px #000000;
+            align-self: flex-start;
+        }
+
+        /* ===== FORMULÁRIO ===== */
+        form {
+            max-width: 400px;
+            padding: 15px;
+            background-color: #2b2b2b;
+            border: 1px solid #8b0000;
+            border-radius: 8px;
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            color: #ff4444;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* cada campo: label em cima, input embaixo */
+        .campo {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        /* bônus: nome e e-mail lado a lado */
+        .linha {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .linha .campo {
+            width: 48%;
+        }
+
+        label {
+            font-size: 13px;
+            font-weight: bold;
+            color: #cccccc;
+            padding: 2px 0;
+        }
+
+        input,
+        select {
+            font-size: 14px;
+            padding: 8px;
+            border: 1px solid #666666;
+            border-radius: 5px;
+            background-color: #eeeeee;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input:focus,
+        select:focus {
+            border: 1px solid #ff4444;
+            outline: none;
+        }
+
+        /* checkbox na mesma linha do texto */
+        .termos {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .termos input {
+            width: auto;
+        }
+
+        /* ===== BOTÃO ===== */
+        button {
+            background: linear-gradient(#b30000, #5a0000);
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid #330000;
+            border-radius: 5px;
+            cursor: pointer;
+            text-shadow: 1px 1px 2px #000000;
+        }
+
+        button:hover {
+            background: linear-gradient(#ff1a1a, #8b0000);
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        /* ===== RODAPÉ ===== */
+        footer {
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            padding: 5px;
+            color: #999999;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Diário de Silent Hill 3</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Posts</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Silent Hill 3: Um sucesso ou ofuscado pelos seus antecessores?</h2>
+            <p>
+               Algo definitivamente notório ao decorrer da trilogia principal de Silent Hill é a humanização de seus personagens e
+            como interagem com o pesadelo vivo em que se encontram, dito isso Cheryl Mason a protagonista do terceiro jogo é indiscutivelmente
+            a minha favorita, fatores como sua personalidade descontraída e adolescente trazem uma identidade única e valiosa em meio aos terrores da cidade.
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkWRp64Ab8c8B8TyaroXES78LvivHTpPM2YNTjnjVxew&amp;s=10" alt="Imagem da protagonista de Silent Hill 3">
+        </article>
+
+        <article>
+            <h2>A trilha sonora é surreal</h2>
+            <p>
+                Não dá pra falar de Silent Hill 3 sem falar da música. O Akira Yamaoka
+                te imerge em meio a um caos sonoro que atormenta o jogador sem mesmo existir um perigo real.
+                Tem uns sons industriais que deixam tudo mais tenso e
+                umas músicas tão pesadas que já me fizeram desistir de explorar
+                somente pelo medo causado. Às vezes eu deixo a trilha
+                tocando enquanto estudo, só pra entrar no clima (e levar uns sustos).
+            </p>
+            <img src="https://picsum.photos/300/201?grayscale" alt="Fones de ouvido em cima de uma mesa">
+        </article>
+    </main>
+
+    <aside>
+        <h2>Bora participar?</h2>
+        <p>Se inscreve aí pra receber os próximos posts!</p>
+        <form method="get">
+            <fieldset>
+                <legend>Seus dados</legend>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" minlength="3" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" max="120" required>
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Quer ler mais sobre:</label>
+                    <select id="assunto" name="assunto">
+                        <option value="historia">História do jogo</option>
+                        <option value="monstros">Monstros</option>
+                        <option value="musicas">Músicas</option>
+                    </select>
+                </div>
+
+                <div class="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Aceito os termos</label>
+                </div>
+
+                <button type="submit">Quero me inscrever!</button>
+            </fieldset>
+        </form>
+    </aside>
+
+    <footer>
+        <p>Blog feito por Januth- 2026</p>
+    </footer>
+
+</body>
+</html>
